@@ -1,5 +1,0 @@
-FROM node
-
-RUN npm install ws
-COPY server.js server.js 
-CMD node server.js

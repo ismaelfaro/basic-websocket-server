@@ -3,17 +3,22 @@ basic websocket server
 
 ## setup
 
-pip install -r requirements.txt
+> pip install -r requirements.txt
 
 ## run
 
-python server.py
+> python server.py
 
 
 # Docker image
 
-## build image
-docker build --no-cache -t wsserver . 
+## from Docker Hub
 
-## run container
-docker run -p 8080:8080 wsserver
+> docker run -p 8080:8080 ismaelfaro/websocket
+
+## from local Dockerfile
+### build image
+> docker build --no-cache -t wsserver . 
+
+### run container
+> docker run -p 8080:8080 wsserver
